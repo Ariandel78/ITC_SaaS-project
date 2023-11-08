@@ -89,3 +89,25 @@ body {
 .tasks {
   flex-basis: 50%;
 }
+
+.week {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.todos_item {
+  height: 120px;
+}
+
+.todos_item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+
