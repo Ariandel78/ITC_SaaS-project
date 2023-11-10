@@ -3,18 +3,18 @@
   padding: 0;
   box-sizing: border-box;
   border: 1px solid #000;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html,
 body {
   height: 100%;
-  
 }
 
 body {
   display: flex;
   padding: 8px;
+  background-color: #f5f6f8;
 }
 
 .sidebar {
@@ -36,19 +36,77 @@ body {
 
 .sidebar_profile {
   flex-basis: 10%;
+  display: flex;
+  padding-left: 13px;
+  align-items: center;
+}
+
+.profile-email {
+  margin-left: 8%;
+}
+
+.email-name {
+  color: #192A3E;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.email-email {
+  color: #90A0B7;
+  font-size: 11px;
+}
+
+.imagepro {
+  border-radius: 50%;
 }
 
 .sidebar_menu {
   flex-grow: 1;
+  padding-left: 13px;
+  padding-top: 20px;
+}
+
+.sidebar_menu_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #334d6e;
+}
+
+.sidebar_menu_ul li:hover {
+  color: #109cf1;
 }
 
 .sidebar_menu_list {
- 
   list-style-type: none;
+}
+
+.settings {
+  margin-top: 15%;
+}
+
+.sidebar-icon {
+  padding-right: 10px;
+  font-size: 16px;
 }
 
 .sidebar_toggle {
   height: 7%;
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+}
+
+.toggle-p {
+  color: #334d6e;
+}
+
+.toggle-p:hover {
+  color: #109cf1;
+}
+
+.toggle-icon {
+  padding-right: 13px;
 }
 
 .main-content {
@@ -64,13 +122,13 @@ body {
 .main-data {
   display: flex;
   flex: 1;
+  /* background-color: #F5F6F8; */
 }
 
-.main-data-left{
+.main-data-left {
   flex-basis: 57%;
   margin: 30px;
 }
-
 
 .main-data-right {
   flex-basis: 43%;
@@ -109,5 +167,3 @@ body {
 .todos_item:not(:last-child) {
   margin-bottom: 20px;
 }
-
-
